@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrato de San Valentín 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Para los iconos -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnY2N2pxaTI5eTI3am8xdWtpZ2VqczJmMXR0ZTIzcGx3ejUzYzNvcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UkfUod3TFW66J2BWKK/giphy.gif'); /* Reemplaza esta URL con el enlace de tu GIF */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Esto hace que el fondo se quede fijo mientras haces scroll */
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #FF3366;
+            color: white;
+            border-radius: 8px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .contract-body {
+            margin: 20px 0;
+        }
+        .contract-body p {
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+        .signature-section {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .signature {
+            border-top: 1px solid #000;
+            width: 40%;
+            text-align: center;
+            padding-top: 10px;
+            position: relative; /* Para posicionar el ícono encima de la línea */
+        }
+        .signature-icon {
+            font-size: 2rem;
+            color: #28a745; /* Color verde para el check */
+            position: absolute;
+            top: -25px; /* Ajusta la posición hacia arriba */
+            left: 50%;
+            transform: translateX(-50%);
+            display: none; /* Inicialmente oculto */
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #FF3366;
+        }
+        .btn-check {
+            background-color: #FF3366;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .btn-check:hover {
+            background-color: #ff4d79;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Contrato de San Valentín 2025</h1>
+        </header>
+
+        <div class="contract-body">
+            <p>Hoy, en este día tan especial, <span class="highlight">Vicente</span> y <span class="highlight">Camila</span> deciden sellar su compromiso de San Valentín para hacer de este 2025 un año lleno de amor, risas y momentos inolvidables juntos.</p>
+        
+            <p><strong>1. Estar siempre ahí</strong></p>
+            <p>Nos prometemos disfrutar de cada momento, apoyarnos mutuamente y mantener siempre un cariño especial durante todo este 2025, especialmente el 14 de febrero, claro.</p>
+        
+            <p><strong>2. ¡Celebrar juntos!</strong></p>
+            <p>El 14 de febrero de 2025, nos aseguramos de tener un plan único para celebrar San Valentín. Ya sea una cena, un detallito bonito o lo que se nos ocurra, lo importante es disfrutar juntos y fortalecer nuestro amor.</p>
+        
+            <p><strong>3. Cuidarnos mutuamente</strong></p>
+            <p>Nos comprometemos a respetar los sentimientos, ideas y opiniones del otro, sin importar las diferencias que puedan surgir. Queremos que nuestra relación siempre sea sana, llena de respeto y cariño.</p>
+        
+            <p><strong>4. Firmar este acuerdo</strong></p>
+            <p>Este contrato de San Valentín será oficialmente sellado con nuestras firmas el 14 de febrero de 2025, como muestra de que estamos listos para este año de amor.</p>
+        </div>
+        
+
+        <div class="signature-section">
+            <div class="signature">
+                <p>Firma de <span class="highlight">Vicente Chavez</span></p>
+                <button class="btn-check" onclick="addCheck('vicente')">Firmar</button>
+                <div class="signature-icon" id="vicente-check"><i class="fas fa-check-circle"></i></div>
+            </div>
+            <div class="signature">
+                <p>Firma de <span class="highlight">Camila Rivadineira</span></p>
+                <button class="btn-check" onclick="addCheck('camila')">Firmar</button>
+                <div class="signature-icon" id="camila-check"><i class="fas fa-check-circle"></i></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Este contrato es válido solo para el año 2025 y puede ser renovado o modificado por ambas partes en acuerdo mutuo.</p>
+        </div>
+    </div>
+
+    <script>
+        function addCheck(person) {
+            const checkIcon = document.getElementById(person + '-check');
+            checkIcon.style.display = 'block'; // Muestra el icono de check
+        }
+    </script>
+
+</body>
+</html>
